@@ -213,41 +213,28 @@
     <!-- contact section -->
     <div class="contact">
         <section>
-            <div class="container">
-                <div class="row">
-                        <h3>Contact-Me</h>
-                </div>
-                <div class="row input-container">
-                        <div class="col-xs-12">
-                            <div class="styled-input wide">
-                                <input type="text" required />
-                                <label>Name</label> 
-                            </div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn">Contact-Me</button>
+
+                <div id="id01" class="modal">
+                
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="images/oury-profil.jpg" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="contant-contact">
+                        <div class="cont-1">
+                            <h3>Amadou Oury Diallo</h3>
+                            <p>Front-End Developer</p>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="styled-input">
-                                <input type="text" required />
-                                <label>Email</label> 
-                            </div>
+                        <div class="cont-2">
+                            <span>Email: ouryetude@gmail.com</span>
+                            <span>Phone: +1204-230-5427</span>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="styled-input" style="float:right;">
-                                <input type="text" required />
-                                <label>Phone Number</label> 
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="styled-input wide">
-                                <textarea required></textarea>
-                                <label>Message</label>
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="btn-lrg submit-btn">Send Message</div>
-                        </div>
-                </div>
+                    </div>
+                </form>
             </div>
-            
         </section>
     </div>
     <!-- section footer -->
